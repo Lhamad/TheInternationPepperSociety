@@ -5,8 +5,8 @@
   font-size:45px;
   text-align: center;
   position: absolute;
-  top: 5%;
-  left: 35%;
+  top: 1%;
+  left: 50%;
   font-family: cursive
   }
 
@@ -19,6 +19,11 @@ body, html {
   width:auto;
 
 }
+
+/* Countdown to Summer Styling*/
+h2{font-size: 60px;}
+
+.countdownTimer {border-style: solid;}
 
 @media(min-width: 720px){
   /* Style the navigation menu */
