@@ -45,17 +45,26 @@ setInterval(countdown, 60000)
 
  /* Get current Weather Information */
 
- 
+ const iconElement = document.querySelector(".weather-icon");
  const tempElement = document.querySelector(".temperature p");
+ const feelsLikeElement = document.querySelector(".feels_like p")
+ const humidity = document.querySelector(".humidity p")
  const descElement= document.querySelector(".temperatureDescription p");
  const locationElement = document.querySelector(".location p");
  const notificationElement = document.querySelector(".notification");
+ 
 
  const weather ={};
 
  weather.temperature={
-     unit:"celcius"
+   unit:"celcius"
  }
+
+ weather.feels_like={
+  unit:"celcius"
+}
+
+weather.humidity={}
 
  const KELVIN=273;
 
@@ -96,7 +105,10 @@ function getWeather(latitude, longitude){
         return data;})
 
     .then(function(data){
-        weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+        weather.temperature.value = Math.floor((data.main.temp - KELVIN)*1.8+32);
+        weather.feels_like.value = Math.floor((data.main.feels_like - KELVIN)*1.8+32);
+        weather.iconId = data.weather[0].icon;
+        weather.humidity.value = data.main.humidity;
         weather.description = data.weather[0].description;
         weather.city = data.name;
         weather.country = data.sys.country;
@@ -109,7 +121,10 @@ function getWeather(latitude, longitude){
 
 //Display the Weather
 function displayWeather(){
-  tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+  iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
+  tempElement.innerHTML = `${weather.temperature.value} \xB0 F`;
+  feelsLikeElement.innerHTML = `${weather.feels_like.value}\xB0 F`;
+  humidity.innerHTML = `${weather.humidity.value} %`;
   descElement.innerHTML = weather.description;
   locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
