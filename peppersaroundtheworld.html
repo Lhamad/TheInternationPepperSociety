@@ -41,14 +41,40 @@
     <h3>Shopping List</h3>
 
     <input type="text" id="addItemInput">
-   <button onclick="myFunction()">Add Item to Shopping List</button>
+   <button onclick="myFunctionlist()">Add Item to Shopping List</button>
 
 
    <ul id="shoppinglist">
-        <li>Peppers</li>
+        
    </ul>
   </div>
-  
+
+
+  <p>Below is a calulator to help determine the number of plants you can safely grow in your garden.  Please enter the length and width of your garden to get the area of the garden and the number of plants you can safely grow in your garden.</p>
+
+  <form>
+    <label>Length of Garden:</label>
+    <input type="text" id="length" name="fname">
+    <label>Width of Garden:</label>
+    <input type="text" id="width" name="lname">
+    <input type="button" value="Submit" onclick="area()">
+    </form>
+
+
+  <div class="gardenspace">
+    <div class="gardenarea">
+      <p>Garden Area in ft</p>
+      <p class="area">Area</p>
+    </div>
+
+    <div class="numberOfPlants">
+      <p>Number of Plants</p>
+      <p class="noPlants">plants</p>
+    </div>
+  </div>
+
+
+
   <script src="peppersaroundtheworld.js"></script>
 </body>
   

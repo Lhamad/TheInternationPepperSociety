@@ -63,4 +63,6 @@ body, html {
     color: white;
   }
   
-  
+  .chartExplanationTitle{
+    text-decoration: underline;
+  }

@@ -101,18 +101,63 @@ body, html {
 
 .maincontent1{
   width:75%;
+  margin: auto; 
 }
 
 .maincontent2{
   width:75%;
+  margin: auto; 
 }
 
 .maincontent3{
   width:75%;
+  margin: auto; 
 }
 
+.maincontent{
+  display: flex;
+  flex-direction:column;
+}
 
 @media only screen and (min-width: 600px){
   body{background-color: purple;}
+
+
+.coutdownHeader{
+  font-size: 20px;
+  width: 40%
+
+  
+  }
+
+  .countdownTimer{
+    margin: 10px;
+    width:30%
+   
+  }
+  
+  
+
+  .maincontent1{
+    width:30%;
+    margin: auto; 
+  }
+  
+  .maincontent2{
+    width:30%;
+    margin: auto; 
+  }
+  
+  .maincontent3{
+    width:30%;
+    margin: auto; 
+  }
+
+
+  .maincontent{
+
+    display: flex;
+    flex-direction: row;
+  }
   
 }
