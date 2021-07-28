@@ -66,3 +66,8 @@ body, html {
   .chartExplanationTitle{
     text-decoration: underline;
   }
+
+
+@media only screen and (min-width: 600px){
+  body{background-color: purple;}
+
