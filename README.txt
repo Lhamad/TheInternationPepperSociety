@@ -1,4 +1,4 @@
-Please start with the pepper frontpage.html.
+Please start with the pepperfrontpage.html.
 
 Features I used:
 
@@ -24,3 +24,5 @@ Retrieve data from and external API and display in your app
 
 	▪	This is done with my weather API.  The api pulls the current weather based off of the users location.  From that the user can get information about the current weather.
 
+
+Next steps would be to add my e-commerce link to my store and add and update my contact form.
