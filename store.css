@@ -67,7 +67,29 @@ body, html {
     text-decoration: underline;
   }
 
+  
+  
+  
+  @media only screen and (min-width: 700px){
+    body{background: purple;}
+.explanation{
+  width:20%;
+}
 
-@media only screen and (min-width: 600px){
-  body{background-color: purple;}
+.graph{
 
+  width: 80%;
+}
+  
+  .graph{
+
+    display:flex;
+    justify-content: center;
+    margin: 10%;
+  }
+  
+
+    
+  }
+  
+  

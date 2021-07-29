@@ -63,7 +63,45 @@ body, html {
   color: white;
 }
 
+.gardenspace{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping_list{
+
+margin:40px;
+
+}
 
 @media only screen and (min-width: 600px){
-  body{background-color: purple;}
+  body{background:green;}
+
+  .gardenarea{
+
+    margin-right:60px;
+  }
+  .gardenspace{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 700px){
+  body{background: purple;}
+  .gardenspace{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+}
 

@@ -38,7 +38,7 @@
 
 
 <div class="shopping_list">
-    <h3>Shopping List</h3>
+    <h1 class="shopping_title">Shopping List</h1>
 
     <input type="text" id="addItemInput">
    <button onclick="myFunctionlist()">Add Item to Shopping List</button>
@@ -50,12 +50,14 @@
   </div>
 
 
-  <p>Below is a calulator to help determine the number of plants you can safely grow in your garden.  Please enter the length and width of your garden to get the area of the garden and the number of plants you can safely grow in your garden.</p>
+<h1>Calculate Area and Number of Plants for Your Garden</h1>
+
+  <p class = "gardenareades">Below is a calulator to help determine the number of plants you can safely grow in your garden.  Please enter the length and width of your garden to get the area of the garden and the number of plants you can safely grow in your garden.</p>
 
   <form>
-    <label>Length of Garden:</label>
+    <label>Length of Garden (ft):</label>
     <input type="text" id="length" name="fname">
-    <label>Width of Garden:</label>
+    <label>Width of Garden (ft):</label>
     <input type="text" id="width" name="lname">
     <input type="button" value="Submit" onclick="area()">
     </form>
